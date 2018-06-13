@@ -1,0 +1,8 @@
+POST http://localhost:8000/users/comment HTTP/1.1
+Content-Type: application/json
+
+{
+    "comment": "<script> document.addEventListener('DOMContentLoaded', function(event) {console.log('DOM fully loaded and parsed');}); </script>"
+}
+
+GET http://localhost:8000/users/comments HTTP/1.1
